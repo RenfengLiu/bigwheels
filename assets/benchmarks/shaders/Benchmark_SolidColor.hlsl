@@ -16,7 +16,7 @@
 
 float4 psmain(VSOutputPos input) : SV_TARGET
 {
-    float4 color = float4(Config.ColorValue, 1.0f);
-    color.a = randomCompute(Config.InstCount, input.position); 
+    float4 color = float4(Config.ColorValue, 0.5f);
+    color.b = randomCompute(Config.InstCount, input.position); 
     return color;
 }
